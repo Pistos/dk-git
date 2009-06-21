@@ -1,5 +1,5 @@
 git_proc = Proc.new do |buffer|
-  if buffer and buffer.name
+  if buffer && buffer.name
     dir = File.dirname( File.expand_path( buffer.name ) )
   else
     dir = '.'
