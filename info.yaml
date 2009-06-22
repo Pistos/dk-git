@@ -9,8 +9,14 @@ uris:
     homepage: http://github.com/Pistos/dk-git
     repository: git://github.com/Pistos/dk-git.git
 licence: MIT
+diakonos:
+    minimum: 0.8.11
+    tested:
+        - 0.8.11
 notes: >
-    Here are some
-    notes about the git extension.
+    This extension provides several git-related features for Diakonos.
 
-    And more!
+    The current git branch of the current buffer is displayed on the status
+    line with the prefix "git:".
+
+    Pressing F9 will load a git diff of the current file.
