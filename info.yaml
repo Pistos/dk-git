@@ -1,0 +1,16 @@
+name: git
+description: A git extension for Diakonos
+author:
+    name: Pistos
+    email: somebody@example.com
+    uri: http://blog.purepistos.net
+version: 1.0.0
+uris:
+    homepage: http://github.com/Pistos/dk-git
+    repository: git://github.com/Pistos/dk-git.git
+licence: MIT
+notes: >
+    Here are some
+    notes about the git extension.
+
+    And more!
