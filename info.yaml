@@ -9,10 +9,11 @@ uris:
     homepage: http://github.com/Pistos/dk-git
     repository: git://github.com/Pistos/dk-git.git
 licence: MIT
-diakonos:
-    minimum: 0.8.11
-    tested:
-        - 0.8.11
+requirements:
+    diakonos:
+        minimum: 0.8.11
+        tested:
+            - 0.8.11
 notes: >
     This extension provides several git-related features for Diakonos.
 
