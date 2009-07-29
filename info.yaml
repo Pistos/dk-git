@@ -2,9 +2,8 @@ name: git
 description: A git extension for Diakonos
 author:
     name: Pistos
-    email: somebody@example.com
     uri: http://blog.purepistos.net
-version: 1.0.0
+version: 1.0.1
 uris:
     homepage: http://github.com/Pistos/dk-git
     repository: git://github.com/Pistos/dk-git.git
@@ -14,10 +13,15 @@ requirements:
         minimum: 0.8.11
         tested:
             - 0.8.11
+            - 0.8.12
+            - 0.8.13
 notes: >
     This extension provides several git-related features for Diakonos.
 
     The current git branch of the current buffer is displayed on the status
     line with the prefix "git:".
 
-    Pressing F9 will load a git diff of the current file.
+    Keys:
+
+    F9         Launch tig
+    Shift-F9   Load a git diff of the current file.
