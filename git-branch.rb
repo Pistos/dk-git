@@ -7,6 +7,13 @@ git_proc = Proc.new do |buffer|
 
   if File.exist? dir
     branch = Dir.chdir( dir ){ `git symbolic-ref HEAD 2>/dev/null`[ /[^\/\n]+$/ ] }
+    if branch
+      width_max = $diakonos.main_window_width / 4
+      branch_truncated = branch[0..width_max]
+      if branch_truncated != branch
+        branch = branch_truncated[0...-2] << '..'
+      end
+    end
     $diakonos.set_status_variable(
       '@git_branch',
       branch ? " git:#{branch} " : nil
